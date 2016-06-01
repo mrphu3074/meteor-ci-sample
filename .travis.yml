@@ -9,4 +9,5 @@ before_install:
 services:
   - mongodb
 
-script: - gagarin -v
+script: 
+  - gagarin -v
