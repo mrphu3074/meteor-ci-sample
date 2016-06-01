@@ -1,11 +1,7 @@
+sudo: required
 language: node_js
-
 node_js:
-  - "0.10.33"
-
-cache:
-  directories:
-  - $HOME/.meteor
+  - "0.10.40"
 
 before_install:
   - meteor || curl https://install.meteor.com | /bin/sh
@@ -14,5 +10,10 @@ before_install:
 services:
   - mongodb
 
-script: 
+cache:
+  directories:
+  - $HOME/.meteor
+
+
+test: 
   - gagarin -v
